@@ -1,9 +1,9 @@
-use lambda::Function;
+use functional::Function;
 
-mod lambda;
+mod functional;
 mod algorithms;
 
 fn main() {
-    let identity = lambda::Identity::new(12);
+    let identity = functional::Identity::new(12);
     println!("{:?}", identity.apply())
 }
