@@ -5,14 +5,14 @@ fn qsort(elements: &[i32]) -> Vec<i32> {
     }
 
     let pivot = elements[0];
-    let tail = elements[1..].to_vec();
+    let tail = &elements[1..];
     let smaller: Vec<i32> = tail.iter().cloned().filter(|x| *x <= pivot).collect();
     let bigger: Vec<i32> = tail.iter().cloned().filter(|x| *x > pivot).collect();
 
     [
-        qsort(smaller.as_slice()),
+        qsort(&smaller[0..]),
         vec![pivot],
-        qsort(bigger.as_slice()),
+        qsort(&bigger[0..]),
     ].concat()
 }
 
