@@ -1,3 +1,5 @@
+extern crate rand;
+
 use functional::Function;
 
 mod functional;
