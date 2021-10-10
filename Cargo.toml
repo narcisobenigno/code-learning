@@ -2,6 +2,7 @@
 name = "code-learning"
 version = "0.1.0"
 authors = ["Narciso Benigno <narciso.benigno@indebted.co>"]
+edition = "2018"
 
 [dependencies]
 rand = "0.8.4"

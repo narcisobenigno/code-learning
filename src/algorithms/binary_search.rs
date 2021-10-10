@@ -18,7 +18,7 @@ fn binary_search_aux(elements: Vec<i32>, element: i32, low: usize, high: usize) 
 
 #[cfg(test)]
 mod test {
-    use algorithms::binary_search::binary_search;
+    use crate::algorithms::binary_search;
 
     #[test]
     fn it_finds_element_position() {

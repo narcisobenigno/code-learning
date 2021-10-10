@@ -1,4 +1,4 @@
-fn selection_sort(elements: &[i32]) -> Vec<i32> {
+pub fn selection_sort(elements: &[i32]) -> Vec<i32> {
     selection_sort_aux(elements, &mut Vec::with_capacity(elements.len()))
 }
 
@@ -27,7 +27,7 @@ fn find_smallest(elements: &[i32]) -> usize {
 
 #[cfg(test)]
 mod test {
-    use algorithms::selection_sort::selection_sort;
+    use crate::algorithms::selection_sort;
 
     #[test]
     fn it_sorts_array() {

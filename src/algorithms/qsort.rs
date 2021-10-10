@@ -1,6 +1,6 @@
 use rand::Rng;
 
-fn qsort(elements: &[i32]) -> Vec<i32> {
+pub fn qsort(elements: &[i32]) -> Vec<i32> {
     if elements.is_empty() {
         return vec![];
     }
@@ -26,7 +26,7 @@ fn qsort(elements: &[i32]) -> Vec<i32> {
 
 #[cfg(test)]
 mod test {
-    use algorithms::qsort::qsort;
+    use crate::algorithms::qsort;
 
     #[test]
     fn it_sorts_elements() {
