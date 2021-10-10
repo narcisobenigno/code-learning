@@ -70,7 +70,6 @@ pub fn provider<'a>(connections: Vec<(&'a str, &'a str)>, duties: Vec<(&'a str, 
 
     for (p1, p2) in connections {
         providers[p2].connect(&providers[p1]);
-        providers[p1].connect(&providers[p2]);
     }
 
     let provider = &providers[whom];
